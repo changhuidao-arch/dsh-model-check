@@ -1,0 +1,16 @@
+DSH Model Check plugin, 2026.
+
+This distribution includes Model Check Core by dufeisolo / Model Check Team,
+https://github.com/dufeisolo/model-check-core,
+commit b1ad2904ae09d30c94f989469f9e545dcf013296, Apache License 2.0.
+Its Python module files are unchanged. DSH integration is in python/bridge.py.
+
+This distribution includes lmfpd-sdk 0.2.0 and reference detector data from
+https://github.com/Ikaleio/lm-detector,
+commit fc719aabf8fef0b2520b16ee1aace43375e79974, MIT License,
+Copyright (c) 2026 xqy2006.
+Full notices are in vendor/lmfpd-LICENSE and data/lm-detector-LICENSE.
+unified_bank.json retains only metadata used by the SDK; shared_detector.bin
+and the published SDK are unchanged. See sources.json for SHA-256 digests.
+
+Fingerprint output is a closed-set ranking, not proof of model identity.

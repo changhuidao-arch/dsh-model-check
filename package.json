@@ -1,0 +1,30 @@
+{
+  "name": "dsh-model-check",
+  "version": "1.0.0",
+  "description": "模型指纹检测：复用 DSH 模型配置，提供行为指纹比对和 Model Check Core 接口检查",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "changhuidao-arch",
+  "repository": { "type": "git", "url": "git+https://github.com/changhuidao-arch/dsh-model-check.git" },
+  "homepage": "https://github.com/changhuidao-arch/dsh-model-check#readme",
+  "bugs": { "url": "https://github.com/changhuidao-arch/dsh-model-check/issues" },
+  "engines": { "node": ">=22", "dsh": ">=0.2.1-rc.3 <0.3.0" },
+  "keywords": ["dsh-plugin", "model-fingerprint"],
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": { "patch": ["./cordis.patch.yml"] },
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-connection", "@deepseek-ai/dsh-client-ui-layout", "@deepseek-ai/dsh-client-ui-sidebar"],
+      "platform": "web"
+    }
+  },
+  "scripts": { "test": "node --test tests/*.test.js" },
+  "peerDependencies": { "@deepseek-ai/dsh-tools": ">=0.2.1-rc.3 <0.3.0" },
+  "peerDependenciesMeta": { "@deepseek-ai/dsh-tools": { "optional": true } },
+  "files": ["index.js", "client.js", "engine.js", "cordis.patch.yml", "python/bridge.py", "python/requirements.txt", "python/vendor/model_check/*.py", "python/vendor/model-check-core-LICENSE", "vendor", "data", "scripts", "tests", "README.md", "VALIDATION.md", "LICENSE", "NOTICE", "sources.json"]
+}

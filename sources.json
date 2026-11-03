@@ -1,0 +1,24 @@
+{
+  "modelCheckCore": {
+    "url": "https://github.com/dufeisolo/model-check-core",
+    "commit": "b1ad2904ae09d30c94f989469f9e545dcf013296",
+    "date": "2026-10-27",
+    "license": "Apache-2.0",
+    "changes": "Vendored unchanged; stdin bridge limits concurrency and retries."
+  },
+  "fingerprint": {
+    "url": "https://github.com/Ikaleio/lm-detector",
+    "commit": "fc719aabf8fef0b2520b16ee1aace43375e79974",
+    "date": "2026-11-02",
+    "license": "MIT",
+    "sdk": "lmfpd-sdk@0.2.0",
+    "models": 64,
+    "bankBuiltAt": "2026-10-27T05:02:50.758637+00:00",
+    "changes": "Bank reduced to SDK scoring metadata; binary detector unchanged."
+  },
+  "files": {
+    "vendor/lmfpd-sdk.js": "3c17ea6400aa31e9b17d8e79977e8665832ac8c537946da4319af4ae40d1c368",
+    "data/shared_detector.bin": "9ac93e5e580f5bac887f97a20bfae15d0a3ad08c6372e4b3552fce6708078a80",
+    "data/unified_bank.json": "a32944b07e43638df2ce768bf2bdfe8661db4aec774ef879510b684f0eb81100"
+  }
+}
