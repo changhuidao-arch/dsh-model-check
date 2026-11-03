@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*.tgz
+*.zip
+.env
+.env.*
+model-check-*.json
+*-实测报告.json
